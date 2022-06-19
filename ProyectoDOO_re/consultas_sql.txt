@@ -1,0 +1,3 @@
+LISTAR USUARIOS
+
+SELECT usuario.id_usuario, persona.nombres, persona.apellidos, persona.cargo, usuario.usuario, usuario.contrasena FROM usuario, persona WHERE persona.id_persona='' AND usuario.id_usuario='';
