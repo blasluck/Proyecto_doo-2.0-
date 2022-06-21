@@ -5,6 +5,7 @@
  */
 package sub_jpanel;
 
+import SqlMetodos.Historial_sql;
 import java.awt.BorderLayout;
 import jpanel.*;
 import java.awt.Color;
@@ -16,11 +17,13 @@ import javax.swing.JPanel;
  */
 public class Historial_Propiedades extends javax.swing.JPanel {
      int width=890, height=630;
+     Historial_sql metodos_historial = new Historial_sql();
     /**
      * Creates new form Inicio
      */
     public Historial_Propiedades() {
         initComponents();
+        listar();
     }
 
     /**
@@ -39,15 +42,14 @@ public class Historial_Propiedades extends javax.swing.JPanel {
         jSeparator2 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
         jScrollPane3 = new javax.swing.JScrollPane();
-        jTable3 = new javax.swing.JTable();
+        TABLA_HPRO = new javax.swing.JTable();
         jScrollPane4 = new javax.swing.JScrollPane();
-        jTable4 = new javax.swing.JTable();
-        jScrollPane5 = new javax.swing.JScrollPane();
-        jTable5 = new javax.swing.JTable();
+        TABLA_ENTRADAS = new javax.swing.JTable();
         jLabel4 = new javax.swing.JLabel();
         jSeparator4 = new javax.swing.JSeparator();
         jlabel_Lista_historial = new javax.swing.JLabel();
-        jlabel_buscar_producto = new javax.swing.JLabel();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        TABLA_SALIDAS = new javax.swing.JTable();
 
         setMaximumSize(new java.awt.Dimension(890, 660));
         setMinimumSize(new java.awt.Dimension(890, 660));
@@ -62,53 +64,40 @@ public class Historial_Propiedades extends javax.swing.JPanel {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("PROPIEDADES");
 
-        jTable3.setModel(new javax.swing.table.DefaultTableModel(
+        TABLA_HPRO.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null}
+
             },
             new String [] {
                 "Codigo", "Producto", "Entradas", "Salidas", "Stock"
             }
         ));
-        jScrollPane3.setViewportView(jTable3);
+        TABLA_HPRO.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                TABLA_HPROMouseClicked(evt);
+            }
+        });
+        jScrollPane3.setViewportView(TABLA_HPRO);
 
-        jTable4.setModel(new javax.swing.table.DefaultTableModel(
+        TABLA_ENTRADAS.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null}
+
             },
             new String [] {
-                "ENTRADAS", "FECHA"
+                "Cantidad ingresada", "Fecha de ingreso"
             }
         ));
-        jScrollPane4.setViewportView(jTable4);
-
-        jTable5.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null}
-            },
-            new String [] {
-                "SALIDAS", "FECHA"
-            }
-        ));
-        jScrollPane5.setViewportView(jTable5);
+        jScrollPane4.setViewportView(TABLA_ENTRADAS);
 
         jLabel4.setFont(new java.awt.Font("Malgun Gothic Semilight", 0, 15)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(153, 153, 153));
         jLabel4.setText("HISTORIAL DEL PRODUCTO");
 
         jlabel_Lista_historial.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_Lista_historial.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
         jlabel_Lista_historial.setForeground(new java.awt.Color(153, 153, 153));
         jlabel_Lista_historial.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/lista.png"))); // NOI18N
-        jlabel_Lista_historial.setText("LISTA DE HISTORIAL");
+        jlabel_Lista_historial.setText("VISTA HISTORIAL");
         jlabel_Lista_historial.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jlabel_Lista_historialMouseClicked(evt);
@@ -121,22 +110,15 @@ public class Historial_Propiedades extends javax.swing.JPanel {
             }
         });
 
-        jlabel_buscar_producto.setBackground(new java.awt.Color(153, 153, 153));
-        jlabel_buscar_producto.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_buscar_producto.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_buscar_producto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/buscar_inventario.png"))); // NOI18N
-        jlabel_buscar_producto.setText("BUSCAR PRODUCTO ");
-        jlabel_buscar_producto.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jlabel_buscar_productoMouseClicked(evt);
+        TABLA_SALIDAS.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Cantidad extraida", "Fecha de salida"
             }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jlabel_buscar_productoMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jlabel_buscar_productoMouseExited(evt);
-            }
-        });
+        ));
+        jScrollPane6.setViewportView(TABLA_SALIDAS);
 
         javax.swing.GroupLayout jPanel_fondoLayout = new javax.swing.GroupLayout(jPanel_fondo);
         jPanel_fondo.setLayout(jPanel_fondoLayout);
@@ -147,9 +129,6 @@ public class Historial_Propiedades extends javax.swing.JPanel {
                     .addGroup(jPanel_fondoLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel_fondoLayout.createSequentialGroup()
-                        .addGap(326, 326, 326)
-                        .addComponent(jLabel4))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_fondoLayout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, 842, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -160,23 +139,25 @@ public class Historial_Propiedades extends javax.swing.JPanel {
                     .addGroup(jPanel_fondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(jPanel_fondoLayout.createSequentialGroup()
                             .addGap(180, 180, 180)
-                            .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(154, 154, 154)
-                            .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(108, 108, 108)
+                            .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel_fondoLayout.createSequentialGroup()
                             .addGap(20, 20, 20)
                             .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 850, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(0, 20, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_fondoLayout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 770, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(46, 46, 46))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_fondoLayout.createSequentialGroup()
-                .addGap(142, 142, 142)
-                .addComponent(jlabel_Lista_historial, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jlabel_buscar_producto)
-                .addGap(138, 138, 138))
+                .addGroup(jPanel_fondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_fondoLayout.createSequentialGroup()
+                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 770, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(46, 46, 46))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_fondoLayout.createSequentialGroup()
+                        .addComponent(jlabel_Lista_historial, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(328, 328, 328))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_fondoLayout.createSequentialGroup()
+                        .addComponent(jLabel4)
+                        .addGap(349, 349, 349))))
         );
         jPanel_fondoLayout.setVerticalGroup(
             jPanel_fondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -184,21 +165,20 @@ public class Historial_Propiedades extends javax.swing.JPanel {
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(14, 14, 14)
-                .addGroup(jPanel_fondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jlabel_buscar_producto)
-                    .addComponent(jlabel_Lista_historial, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(22, 22, 22)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jlabel_Lista_historial, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(24, 24, 24)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel_fondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(11, 11, 11)
-                .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addGroup(jPanel_fondoLayout.createSequentialGroup()
+                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(11, 11, 11)
+                        .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel4)
-                .addGap(37, 37, 37)
+                .addGap(31, 31, 31)
                 .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -230,18 +210,11 @@ public class Historial_Propiedades extends javax.swing.JPanel {
         jlabel_Lista_historial.setForeground(new Color(153,153,153));
     }//GEN-LAST:event_jlabel_Lista_historialMouseExited
 
-    private void jlabel_buscar_productoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlabel_buscar_productoMouseClicked
-        Historial_Buscar nueva= new Historial_Buscar();
-        addConatiner(nueva, width, height, jPanel_fondo);
-    }//GEN-LAST:event_jlabel_buscar_productoMouseClicked
-
-    private void jlabel_buscar_productoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlabel_buscar_productoMouseEntered
-        jlabel_buscar_producto.setForeground(new Color(45,130,215));
-    }//GEN-LAST:event_jlabel_buscar_productoMouseEntered
-
-    private void jlabel_buscar_productoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlabel_buscar_productoMouseExited
-        jlabel_buscar_producto.setForeground(new Color(153,153,153));
-    }//GEN-LAST:event_jlabel_buscar_productoMouseExited
+    private void TABLA_HPROMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TABLA_HPROMouseClicked
+       int row_select = TABLA_HPRO.getSelectedRow();
+       TABLA_ENTRADAS.setModel(metodos_historial.sistema_Entrada(TABLA_HPRO.getValueAt(row_select, 0).toString()));
+       TABLA_SALIDAS.setModel(metodos_historial.sistema_Salida(TABLA_HPRO.getValueAt(row_select, 0).toString()));
+    }//GEN-LAST:event_TABLA_HPROMouseClicked
 
     public void Look() {
         try {
@@ -262,22 +235,21 @@ public class Historial_Propiedades extends javax.swing.JPanel {
         }
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTable TABLA_ENTRADAS;
+    private javax.swing.JTable TABLA_HPRO;
+    private javax.swing.JTable TABLA_SALIDAS;
     private javax.swing.JPanel fondo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel_fondo;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
-    private javax.swing.JTable jTable3;
-    private javax.swing.JTable jTable4;
-    private javax.swing.JTable jTable5;
     private javax.swing.JLabel jlabel_Lista_historial;
-    private javax.swing.JLabel jlabel_buscar_producto;
     // End of variables declaration//GEN-END:variables
     public void addConatiner(JPanel p,int width, int height,JPanel c){
         p.setSize(width,height);
@@ -287,4 +259,9 @@ public class Historial_Propiedades extends javax.swing.JPanel {
         c.revalidate();
         c.repaint();
     }
+    
+    public void listar(){
+        TABLA_HPRO.setModel(metodos_historial.listar_Tabla_Propiedades());
+    }
+    
 }
