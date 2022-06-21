@@ -201,7 +201,7 @@ public class Historial_vista extends javax.swing.JPanel {
             }
         }
         
-        JFreeChart grafica = ChartFactory.createBarChart3D("Cantidad", "", "Productos Consumidos", datos_barra, PlotOrientation.VERTICAL, true, false, false);
+        JFreeChart grafica = ChartFactory.createBarChart3D("Productos Consumidos", "", "Cantidad", datos_barra, PlotOrientation.VERTICAL, true, false, false);
         
         ChartPanel panel = new ChartPanel(grafica);
         jpanel_chartArt.setLayout(new java.awt.BorderLayout());
