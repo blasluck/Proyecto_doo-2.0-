@@ -5,6 +5,7 @@
  */
 package sub_jpanel;
 
+import SqlMetodos.Exportacion_excel;
 import SqlMetodos.Historial_sql;
 import java.awt.BorderLayout;
 import jpanel.*;
@@ -18,6 +19,7 @@ import javax.swing.JPanel;
 public class Historial_Propiedades extends javax.swing.JPanel {
      int width=890, height=630;
      Historial_sql metodos_historial = new Historial_sql();
+     Exportacion_excel metodo_excel = new Exportacion_excel();
     /**
      * Creates new form Inicio
      */
@@ -50,6 +52,7 @@ public class Historial_Propiedades extends javax.swing.JPanel {
         jlabel_Lista_historial = new javax.swing.JLabel();
         jScrollPane6 = new javax.swing.JScrollPane();
         TABLA_SALIDAS = new javax.swing.JTable();
+        jlabel_EXPORTAR_EXCEL = new javax.swing.JLabel();
 
         setMaximumSize(new java.awt.Dimension(890, 660));
         setMinimumSize(new java.awt.Dimension(890, 660));
@@ -120,6 +123,23 @@ public class Historial_Propiedades extends javax.swing.JPanel {
         ));
         jScrollPane6.setViewportView(TABLA_SALIDAS);
 
+        jlabel_EXPORTAR_EXCEL.setBackground(new java.awt.Color(153, 153, 153));
+        jlabel_EXPORTAR_EXCEL.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
+        jlabel_EXPORTAR_EXCEL.setForeground(new java.awt.Color(153, 153, 153));
+        jlabel_EXPORTAR_EXCEL.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/EXCEL.png"))); // NOI18N
+        jlabel_EXPORTAR_EXCEL.setText("EXPORTAR A EXCEL");
+        jlabel_EXPORTAR_EXCEL.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jlabel_EXPORTAR_EXCELMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlabel_EXPORTAR_EXCELMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlabel_EXPORTAR_EXCELMouseExited(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel_fondoLayout = new javax.swing.GroupLayout(jPanel_fondo);
         jPanel_fondo.setLayout(jPanel_fondoLayout);
         jPanel_fondoLayout.setHorizontalGroup(
@@ -153,8 +173,10 @@ public class Historial_Propiedades extends javax.swing.JPanel {
                         .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 770, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(46, 46, 46))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_fondoLayout.createSequentialGroup()
+                        .addComponent(jlabel_EXPORTAR_EXCEL, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(135, 135, 135)
                         .addComponent(jlabel_Lista_historial, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(328, 328, 328))
+                        .addGap(177, 177, 177))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_fondoLayout.createSequentialGroup()
                         .addComponent(jLabel4)
                         .addGap(349, 349, 349))))
@@ -166,7 +188,9 @@ public class Historial_Propiedades extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jlabel_Lista_historial, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel_fondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jlabel_Lista_historial, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jlabel_EXPORTAR_EXCEL, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(24, 24, 24)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -216,6 +240,18 @@ public class Historial_Propiedades extends javax.swing.JPanel {
        TABLA_SALIDAS.setModel(metodos_historial.sistema_Salida(TABLA_HPRO.getValueAt(row_select, 0).toString()));
     }//GEN-LAST:event_TABLA_HPROMouseClicked
 
+    private void jlabel_EXPORTAR_EXCELMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlabel_EXPORTAR_EXCELMouseClicked
+        metodo_excel.reporte_Historial(TABLA_HPRO);
+    }//GEN-LAST:event_jlabel_EXPORTAR_EXCELMouseClicked
+
+    private void jlabel_EXPORTAR_EXCELMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlabel_EXPORTAR_EXCELMouseEntered
+        jlabel_EXPORTAR_EXCEL.setForeground(new Color(45,130,215));
+    }//GEN-LAST:event_jlabel_EXPORTAR_EXCELMouseEntered
+
+    private void jlabel_EXPORTAR_EXCELMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlabel_EXPORTAR_EXCELMouseExited
+        jlabel_EXPORTAR_EXCEL.setForeground(new Color(153,153,153));
+    }//GEN-LAST:event_jlabel_EXPORTAR_EXCELMouseExited
+
     public void Look() {
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -249,6 +285,7 @@ public class Historial_Propiedades extends javax.swing.JPanel {
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
+    private javax.swing.JLabel jlabel_EXPORTAR_EXCEL;
     private javax.swing.JLabel jlabel_Lista_historial;
     // End of variables declaration//GEN-END:variables
     public void addConatiner(JPanel p,int width, int height,JPanel c){
