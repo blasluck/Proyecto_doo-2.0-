@@ -66,7 +66,7 @@ public class User extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(251, 251, 251));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btn_close.setBackground(new java.awt.Color(255, 255, 255));
@@ -91,7 +91,7 @@ public class User extends javax.swing.JFrame {
         btn_closeLayout.setHorizontalGroup(
             btn_closeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btn_closeLayout.createSequentialGroup()
-                .addContainerGap(12, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addContainerGap())
         );
@@ -160,7 +160,6 @@ public class User extends javax.swing.JFrame {
         jcombo_cargo.setBackground(new java.awt.Color(255, 255, 255));
         jcombo_cargo.setForeground(new java.awt.Color(102, 102, 102));
         jcombo_cargo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "Empleado", "Administrador" }));
-        jcombo_cargo.setBorder(null);
         jcombo_cargo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jcombo_cargoActionPerformed(evt);

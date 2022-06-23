@@ -80,6 +80,7 @@ public class Historial_Buscar extends javax.swing.JPanel {
         }
 
         jPanel3.setBackground(new java.awt.Color(30, 30, 30));
+        jPanel3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(64, 68, 54), 2, true));
 
         jlabel_buscar_producto.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_buscar_producto.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
@@ -101,12 +102,12 @@ public class Historial_Buscar extends javax.swing.JPanel {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jlabel_buscar_producto)
-                .addContainerGap(12, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(12, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jlabel_buscar_producto)
                 .addContainerGap())
         );
