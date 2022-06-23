@@ -60,12 +60,16 @@ public class Historial_Propiedades extends javax.swing.JPanel {
 
         fondo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel_fondo.setBackground(new java.awt.Color(43, 43, 43));
+        jPanel_fondo.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel1.setFont(new java.awt.Font("Malgun Gothic", 0, 16)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel1.setForeground(new java.awt.Color(51, 51, 51));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("PROPIEDADES");
+
+        jSeparator2.setBackground(new java.awt.Color(51, 51, 51));
+
+        jSeparator3.setBackground(new java.awt.Color(51, 51, 51));
 
         TABLA_HPRO.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -93,13 +97,15 @@ public class Historial_Propiedades extends javax.swing.JPanel {
         jScrollPane4.setViewportView(TABLA_ENTRADAS);
 
         jLabel4.setFont(new java.awt.Font("Malgun Gothic Semilight", 0, 15)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel4.setForeground(new java.awt.Color(51, 51, 51));
         jLabel4.setText("HISTORIAL DEL PRODUCTO");
+
+        jSeparator4.setBackground(new java.awt.Color(51, 51, 51));
 
         jlabel_Lista_historial.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_Lista_historial.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_Lista_historial.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_Lista_historial.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/lista.png"))); // NOI18N
+        jlabel_Lista_historial.setForeground(new java.awt.Color(51, 51, 51));
+        jlabel_Lista_historial.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/list.png"))); // NOI18N
         jlabel_Lista_historial.setText("VISTA HISTORIAL");
         jlabel_Lista_historial.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -125,8 +131,8 @@ public class Historial_Propiedades extends javax.swing.JPanel {
 
         jlabel_EXPORTAR_EXCEL.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_EXPORTAR_EXCEL.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_EXPORTAR_EXCEL.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_EXPORTAR_EXCEL.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/EXCEL.png"))); // NOI18N
+        jlabel_EXPORTAR_EXCEL.setForeground(new java.awt.Color(51, 51, 51));
+        jlabel_EXPORTAR_EXCEL.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/excel..png"))); // NOI18N
         jlabel_EXPORTAR_EXCEL.setText("EXPORTAR A EXCEL");
         jlabel_EXPORTAR_EXCEL.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {

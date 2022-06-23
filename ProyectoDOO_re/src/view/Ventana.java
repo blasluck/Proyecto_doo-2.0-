@@ -341,7 +341,7 @@ public class Ventana extends javax.swing.JFrame {
 
         getContentPane().add(dock, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 230, 660));
 
-        header.setBackground(new java.awt.Color(43, 43, 43));
+        header.setBackground(new java.awt.Color(255, 255, 255));
         header.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
                 headerMouseDragged(evt);
@@ -366,7 +366,7 @@ public class Ventana extends javax.swing.JFrame {
 
         getContentPane().add(header, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1120, 30));
 
-        background.setBackground(new java.awt.Color(43, 43, 43));
+        background.setBackground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout backgroundLayout = new javax.swing.GroupLayout(background);
         background.setLayout(backgroundLayout);

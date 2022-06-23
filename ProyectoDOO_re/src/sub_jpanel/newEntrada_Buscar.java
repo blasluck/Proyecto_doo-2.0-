@@ -53,7 +53,7 @@ public class newEntrada_Buscar extends javax.swing.JPanel {
         jScrollPane1 = new javax.swing.JScrollPane();
         TABLA_ENTRADAPRODUCTOS = new javax.swing.JTable();
 
-        setBackground(new java.awt.Color(43, 43, 43));
+        setBackground(new java.awt.Color(255, 255, 255));
         setForeground(new java.awt.Color(153, 153, 153));
         setMaximumSize(new java.awt.Dimension(890, 660));
         setMinimumSize(new java.awt.Dimension(890, 660));
@@ -63,13 +63,13 @@ public class newEntrada_Buscar extends javax.swing.JPanel {
         fondo.setBackground(new java.awt.Color(43, 43, 43));
         fondo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        Jpanel_fondo.setBackground(new java.awt.Color(43, 43, 43));
+        Jpanel_fondo.setBackground(new java.awt.Color(255, 255, 255));
         Jpanel_fondo.setForeground(new java.awt.Color(153, 153, 153));
 
         jlabel_editar_entrada.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_editar_entrada.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_editar_entrada.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_editar_entrada.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Editar_producto.png"))); // NOI18N
+        jlabel_editar_entrada.setForeground(new java.awt.Color(51, 51, 51));
+        jlabel_editar_entrada.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/edit_prod.png"))); // NOI18N
         jlabel_editar_entrada.setText("EDITAR ENTRADA");
         jlabel_editar_entrada.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -83,10 +83,14 @@ public class newEntrada_Buscar extends javax.swing.JPanel {
             }
         });
 
+        jSeparator1.setBackground(new java.awt.Color(51, 51, 51));
+
+        jSeparator2.setBackground(new java.awt.Color(51, 51, 51));
+
         jlabel_nueva_entrada.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_nueva_entrada.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_nueva_entrada.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_nueva_entrada.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/nueva_entrada.png"))); // NOI18N
+        jlabel_nueva_entrada.setForeground(new java.awt.Color(51, 51, 51));
+        jlabel_nueva_entrada.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/new_entrad.png"))); // NOI18N
         jlabel_nueva_entrada.setText("NUEVA ENTRADA");
         jlabel_nueva_entrada.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -101,14 +105,14 @@ public class newEntrada_Buscar extends javax.swing.JPanel {
         });
 
         jLabel2.setFont(new java.awt.Font("Malgun Gothic", 0, 16)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel2.setForeground(new java.awt.Color(51, 51, 51));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("BUSCAR ENTRADA DE PRODUCTOS");
 
         jlabel_nlista_entradas.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_nlista_entradas.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_nlista_entradas.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_nlista_entradas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/lista.png"))); // NOI18N
+        jlabel_nlista_entradas.setForeground(new java.awt.Color(51, 51, 51));
+        jlabel_nlista_entradas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/list.png"))); // NOI18N
         jlabel_nlista_entradas.setText("LISTA DE ENTRADAS");
         jlabel_nlista_entradas.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {

@@ -62,13 +62,13 @@ public class Salida_Buscar extends javax.swing.JPanel {
         fondo.setBackground(new java.awt.Color(43, 43, 43));
         fondo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        Jpanel_fondo.setBackground(new java.awt.Color(43, 43, 43));
+        Jpanel_fondo.setBackground(new java.awt.Color(255, 255, 255));
         Jpanel_fondo.setForeground(new java.awt.Color(153, 153, 153));
 
         jlabel_editar_salida.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_editar_salida.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_editar_salida.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_editar_salida.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Editar_producto.png"))); // NOI18N
+        jlabel_editar_salida.setForeground(new java.awt.Color(51, 51, 51));
+        jlabel_editar_salida.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/edit_prod.png"))); // NOI18N
         jlabel_editar_salida.setText("EDITAR SALIDA ");
         jlabel_editar_salida.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -82,10 +82,14 @@ public class Salida_Buscar extends javax.swing.JPanel {
             }
         });
 
+        jSeparator1.setBackground(new java.awt.Color(51, 51, 51));
+
+        jSeparator2.setBackground(new java.awt.Color(51, 51, 51));
+
         jlabel_nueva_salida.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_nueva_salida.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_nueva_salida.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_nueva_salida.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/nueva_entrada.png"))); // NOI18N
+        jlabel_nueva_salida.setForeground(new java.awt.Color(51, 51, 51));
+        jlabel_nueva_salida.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/new_entrad.png"))); // NOI18N
         jlabel_nueva_salida.setText("NUEVA SALIDA");
         jlabel_nueva_salida.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -100,14 +104,14 @@ public class Salida_Buscar extends javax.swing.JPanel {
         });
 
         jLabel2.setFont(new java.awt.Font("Malgun Gothic", 0, 16)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel2.setForeground(new java.awt.Color(51, 51, 51));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("BUSCAR SALIDA DE PRODUCTOS");
 
         jlabel_nlista_salidas.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_nlista_salidas.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_nlista_salidas.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_nlista_salidas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/lista.png"))); // NOI18N
+        jlabel_nlista_salidas.setForeground(new java.awt.Color(51, 51, 51));
+        jlabel_nlista_salidas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/list.png"))); // NOI18N
         jlabel_nlista_salidas.setText("LISTA DE SALIDAS");
         jlabel_nlista_salidas.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {

@@ -61,14 +61,14 @@ public class Trabajadores_buscar extends javax.swing.JPanel {
 
         fondo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        list_jpnael.setBackground(new java.awt.Color(43, 43, 43));
+        list_jpnael.setBackground(new java.awt.Color(255, 255, 255));
 
-        jSeparator1.setBackground(new java.awt.Color(153, 153, 153));
+        jSeparator1.setBackground(new java.awt.Color(51, 51, 51));
 
-        jSeparator2.setBackground(new java.awt.Color(153, 153, 153));
+        jSeparator2.setBackground(new java.awt.Color(51, 51, 51));
 
         jLabel2.setFont(new java.awt.Font("Malgun Gothic", 0, 16)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel2.setForeground(new java.awt.Color(51, 51, 51));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("BUSCAR TRABAJADOR");
 
@@ -126,12 +126,12 @@ public class Trabajadores_buscar extends javax.swing.JPanel {
             TABLA_TRBJ_FOTO.getColumnModel().getColumn(0).setMaxWidth(30);
         }
 
-        jSeparator3.setBackground(new java.awt.Color(153, 153, 153));
+        jSeparator3.setBackground(new java.awt.Color(51, 51, 51));
 
         jlabel_lista_trbj.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_lista_trbj.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_lista_trbj.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_lista_trbj.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/lista.png"))); // NOI18N
+        jlabel_lista_trbj.setForeground(new java.awt.Color(51, 51, 51));
+        jlabel_lista_trbj.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/list.png"))); // NOI18N
         jlabel_lista_trbj.setText("LISTA DE TRABAJADORES");
         jlabel_lista_trbj.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -147,8 +147,8 @@ public class Trabajadores_buscar extends javax.swing.JPanel {
 
         jlabel_nuevo_trbj.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_nuevo_trbj.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_nuevo_trbj.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_nuevo_trbj.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Trabajadores.png"))); // NOI18N
+        jlabel_nuevo_trbj.setForeground(new java.awt.Color(51, 51, 51));
+        jlabel_nuevo_trbj.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/trbjadores.png"))); // NOI18N
         jlabel_nuevo_trbj.setText("NUEVO TRABAJADOR");
         jlabel_nuevo_trbj.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -164,8 +164,8 @@ public class Trabajadores_buscar extends javax.swing.JPanel {
 
         jlabel_lista_editar_trbj.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_lista_editar_trbj.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_lista_editar_trbj.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_lista_editar_trbj.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Editar_producto.png"))); // NOI18N
+        jlabel_lista_editar_trbj.setForeground(new java.awt.Color(51, 51, 51));
+        jlabel_lista_editar_trbj.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/edit_prod.png"))); // NOI18N
         jlabel_lista_editar_trbj.setText("EDITAR TRABAJADOR");
         jlabel_lista_editar_trbj.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {

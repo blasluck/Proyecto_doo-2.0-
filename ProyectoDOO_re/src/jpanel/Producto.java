@@ -66,19 +66,20 @@ public class Producto extends javax.swing.JPanel {
 
         fondo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(43, 43, 43));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setForeground(new java.awt.Color(51, 51, 51));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Malgun Gothic", 0, 16)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel1.setForeground(new java.awt.Color(51, 51, 51));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("PRODUCTOS");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-60, 10, 249, 20));
 
         jlabel_eliminar_producto.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_eliminar_producto.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_eliminar_producto.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_eliminar_producto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/delete_prod.png"))); // NOI18N
+        jlabel_eliminar_producto.setForeground(new java.awt.Color(51, 51, 51));
+        jlabel_eliminar_producto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/delet_prod.png"))); // NOI18N
         jlabel_eliminar_producto.setText("ELIMINAR PRODUCTO");
         jlabel_eliminar_producto.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -92,7 +93,11 @@ public class Producto extends javax.swing.JPanel {
             }
         });
         jPanel1.add(jlabel_eliminar_producto, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 182, 160, 40));
+
+        jSeparator1.setBackground(new java.awt.Color(51, 51, 51));
         jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 870, 20));
+
+        jSeparator2.setBackground(new java.awt.Color(51, 51, 51));
         jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, 870, 20));
 
         TABLA_PRODUCTOS.setModel(new javax.swing.table.DefaultTableModel(
@@ -114,32 +119,34 @@ public class Producto extends javax.swing.JPanel {
 
         jlabel_editar_entrada1.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_editar_entrada1.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_editar_entrada1.setForeground(new java.awt.Color(153, 153, 153));
+        jlabel_editar_entrada1.setForeground(new java.awt.Color(51, 51, 51));
         jlabel_editar_entrada1.setText("Stock");
         jPanel1.add(jlabel_editar_entrada1, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 50, -1, 20));
 
         jlabel_editar_entrada2.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_editar_entrada2.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_editar_entrada2.setForeground(new java.awt.Color(153, 153, 153));
+        jlabel_editar_entrada2.setForeground(new java.awt.Color(51, 51, 51));
         jlabel_editar_entrada2.setText("Nombre");
         jPanel1.add(jlabel_editar_entrada2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, -1, 44));
 
         jlabel_editar_entrada3.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_editar_entrada3.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_editar_entrada3.setForeground(new java.awt.Color(153, 153, 153));
+        jlabel_editar_entrada3.setForeground(new java.awt.Color(51, 51, 51));
         jlabel_editar_entrada3.setText("Tipo");
         jPanel1.add(jlabel_editar_entrada3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 40, 30, 44));
 
         jlabel_editar_entrada4.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_editar_entrada4.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_editar_entrada4.setForeground(new java.awt.Color(153, 153, 153));
+        jlabel_editar_entrada4.setForeground(new java.awt.Color(51, 51, 51));
         jlabel_editar_entrada4.setText("Almacen");
         jPanel1.add(jlabel_editar_entrada4, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 40, 70, 44));
 
-        txt_limite.setBackground(new java.awt.Color(43, 43, 43));
-        txt_limite.setForeground(new java.awt.Color(204, 204, 204));
+        txt_limite.setBackground(new java.awt.Color(255, 255, 255));
+        txt_limite.setForeground(new java.awt.Color(51, 51, 51));
         txt_limite.setBorder(null);
         jPanel1.add(txt_limite, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 80, 90, 30));
+
+        jSeparator4.setBackground(new java.awt.Color(51, 51, 51));
         jPanel1.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 110, 70, 20));
 
         jcombo_Nalmacen.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "1", "2" }));
@@ -148,16 +155,18 @@ public class Producto extends javax.swing.JPanel {
         jcombo_tipo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "Consumible", "Unitario" }));
         jPanel1.add(jcombo_tipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 90, 120, -1));
 
-        txt_nombre.setBackground(new java.awt.Color(43, 43, 43));
-        txt_nombre.setForeground(new java.awt.Color(204, 204, 204));
+        txt_nombre.setBackground(new java.awt.Color(255, 255, 255));
+        txt_nombre.setForeground(new java.awt.Color(51, 51, 51));
         txt_nombre.setBorder(null);
         jPanel1.add(txt_nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 120, 30));
+
+        jSeparator5.setBackground(new java.awt.Color(51, 51, 51));
         jPanel1.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 120, 10));
 
         jlabel_agregar_producto.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_agregar_producto.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_agregar_producto.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_agregar_producto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/nueva_entrada.png"))); // NOI18N
+        jlabel_agregar_producto.setForeground(new java.awt.Color(51, 51, 51));
+        jlabel_agregar_producto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/new_entrad.png"))); // NOI18N
         jlabel_agregar_producto.setText("AGREGAR PRODUCTO");
         jlabel_agregar_producto.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -174,8 +183,8 @@ public class Producto extends javax.swing.JPanel {
 
         jlabel_editar_producto.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_editar_producto.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_editar_producto.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_editar_producto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Editar_producto.png"))); // NOI18N
+        jlabel_editar_producto.setForeground(new java.awt.Color(51, 51, 51));
+        jlabel_editar_producto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/edit_prod.png"))); // NOI18N
         jlabel_editar_producto.setText("ACTUALIZAR PRODUCTO");
         jlabel_editar_producto.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -192,13 +201,15 @@ public class Producto extends javax.swing.JPanel {
 
         jlabel_editar_entrada5.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_editar_entrada5.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_editar_entrada5.setForeground(new java.awt.Color(153, 153, 153));
+        jlabel_editar_entrada5.setForeground(new java.awt.Color(51, 51, 51));
         jlabel_editar_entrada5.setText("Cantidad Limite");
         jPanel1.add(jlabel_editar_entrada5, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 50, -1, 20));
+
+        jSeparator6.setBackground(new java.awt.Color(51, 51, 51));
         jPanel1.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 110, 90, 20));
 
-        txt_Stock.setBackground(new java.awt.Color(43, 43, 43));
-        txt_Stock.setForeground(new java.awt.Color(153, 153, 153));
+        txt_Stock.setBackground(new java.awt.Color(255, 255, 255));
+        txt_Stock.setForeground(new java.awt.Color(51, 51, 51));
         txt_Stock.setBorder(null);
         jPanel1.add(txt_Stock, new org.netbeans.lib.awtextra.AbsoluteConstraints(783, 80, 70, 30));
 

@@ -85,19 +85,19 @@ public class Salida_Nueva extends javax.swing.JPanel {
 
         fondo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        Jpanel_newSalida.setBackground(new java.awt.Color(43, 43, 43));
+        Jpanel_newSalida.setBackground(new java.awt.Color(255, 255, 255));
         Jpanel_newSalida.setForeground(new java.awt.Color(153, 153, 153));
 
         jLabel1.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel1.setForeground(new java.awt.Color(51, 51, 51));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/entraer_cantridad.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/extrac_cant.png"))); // NOI18N
         jLabel1.setText("EXTRAER CANTIDAD");
 
         jlabel_buscar_salida.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_buscar_salida.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_buscar_salida.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_buscar_salida.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/editar_entrada.png"))); // NOI18N
+        jlabel_buscar_salida.setForeground(new java.awt.Color(51, 51, 51));
+        jlabel_buscar_salida.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/fech_registr.png"))); // NOI18N
         jlabel_buscar_salida.setText("BUSCAR SALIDAS (FECHA)");
         jlabel_buscar_salida.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -111,10 +111,14 @@ public class Salida_Nueva extends javax.swing.JPanel {
             }
         });
 
+        jSeparator1.setForeground(new java.awt.Color(51, 51, 51));
+
+        jSeparator2.setForeground(new java.awt.Color(51, 51, 51));
+
         jlabel_editar_salida.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_editar_salida.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_editar_salida.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_editar_salida.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Editar_producto.png"))); // NOI18N
+        jlabel_editar_salida.setForeground(new java.awt.Color(51, 51, 51));
+        jlabel_editar_salida.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/edit_prod.png"))); // NOI18N
         jlabel_editar_salida.setText("EDITAR SALIDA");
         jlabel_editar_salida.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -129,12 +133,12 @@ public class Salida_Nueva extends javax.swing.JPanel {
         });
 
         jLabel2.setFont(new java.awt.Font("Malgun Gothic", 0, 16)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel2.setForeground(new java.awt.Color(51, 51, 51));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("NUEVA SALIDA DE PRODUCTOS");
 
-        txt_buscarcod.setBackground(new java.awt.Color(43, 43, 43));
-        txt_buscarcod.setForeground(new java.awt.Color(153, 153, 153));
+        txt_buscarcod.setBackground(new java.awt.Color(255, 255, 255));
+        txt_buscarcod.setForeground(new java.awt.Color(51, 51, 51));
         txt_buscarcod.setText("Ingrese el codigo del producto");
         txt_buscarcod.setBorder(null);
         txt_buscarcod.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -171,17 +175,17 @@ public class Salida_Nueva extends javax.swing.JPanel {
         );
 
         txt_mostrarAlmacen.setEditable(false);
-        txt_mostrarAlmacen.setBackground(new java.awt.Color(36, 36, 36));
-        txt_mostrarAlmacen.setForeground(new java.awt.Color(153, 153, 153));
+        txt_mostrarAlmacen.setBackground(new java.awt.Color(153, 153, 153));
+        txt_mostrarAlmacen.setForeground(new java.awt.Color(51, 51, 51));
         txt_mostrarAlmacen.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(36, 36, 36), 4, true));
 
         txt_mostrar_cargo.setEditable(false);
-        txt_mostrar_cargo.setBackground(new java.awt.Color(36, 36, 36));
-        txt_mostrar_cargo.setForeground(new java.awt.Color(153, 153, 153));
+        txt_mostrar_cargo.setBackground(new java.awt.Color(153, 153, 153));
+        txt_mostrar_cargo.setForeground(new java.awt.Color(51, 51, 51));
         txt_mostrar_cargo.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(36, 36, 36), 4, true));
 
-        txt_buscarempled.setBackground(new java.awt.Color(43, 43, 43));
-        txt_buscarempled.setForeground(new java.awt.Color(153, 153, 153));
+        txt_buscarempled.setBackground(new java.awt.Color(255, 255, 255));
+        txt_buscarempled.setForeground(new java.awt.Color(51, 51, 51));
         txt_buscarempled.setText("Ingresa el codigo del empleado");
         txt_buscarempled.setBorder(null);
         txt_buscarempled.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -223,23 +227,23 @@ public class Salida_Nueva extends javax.swing.JPanel {
         );
 
         txt_mostrarnombrePord.setEditable(false);
-        txt_mostrarnombrePord.setBackground(new java.awt.Color(36, 36, 36));
-        txt_mostrarnombrePord.setForeground(new java.awt.Color(153, 153, 153));
+        txt_mostrarnombrePord.setBackground(new java.awt.Color(153, 153, 153));
+        txt_mostrarnombrePord.setForeground(new java.awt.Color(51, 51, 51));
         txt_mostrarnombrePord.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(36, 36, 36), 4, true));
 
         txt_mostrarNameEmpl.setEditable(false);
-        txt_mostrarNameEmpl.setBackground(new java.awt.Color(36, 36, 36));
-        txt_mostrarNameEmpl.setForeground(new java.awt.Color(153, 153, 153));
+        txt_mostrarNameEmpl.setBackground(new java.awt.Color(153, 153, 153));
+        txt_mostrarNameEmpl.setForeground(new java.awt.Color(51, 51, 51));
         txt_mostrarNameEmpl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(36, 36, 36), 4, true));
 
         jLabel5.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel5.setForeground(new java.awt.Color(51, 51, 51));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/nueva_salida.png"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Salida_editar.png"))); // NOI18N
         jLabel5.setText("INFORMACION DE SALIDA");
 
-        txt_cantidad.setBackground(new java.awt.Color(43, 43, 43));
-        txt_cantidad.setForeground(new java.awt.Color(153, 153, 153));
+        txt_cantidad.setBackground(new java.awt.Color(255, 255, 255));
+        txt_cantidad.setForeground(new java.awt.Color(51, 51, 51));
         txt_cantidad.setText("Cantidad");
         txt_cantidad.setBorder(null);
         txt_cantidad.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -250,8 +254,8 @@ public class Salida_Nueva extends javax.swing.JPanel {
 
         jlabel_cancelar.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_cancelar.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_cancelar.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_cancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/cancelar..png"))); // NOI18N
+        jlabel_cancelar.setForeground(new java.awt.Color(51, 51, 51));
+        jlabel_cancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/cancelar.png"))); // NOI18N
         jlabel_cancelar.setText("CANCELAR SALIDA");
         jlabel_cancelar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -267,8 +271,8 @@ public class Salida_Nueva extends javax.swing.JPanel {
 
         jlabel_agregarsalida.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_agregarsalida.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_agregarsalida.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_agregarsalida.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/agregarsalida.png"))); // NOI18N
+        jlabel_agregarsalida.setForeground(new java.awt.Color(51, 51, 51));
+        jlabel_agregarsalida.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/agreagr_salid.png"))); // NOI18N
         jlabel_agregarsalida.setText("AGREGAR SALIDA");
         jlabel_agregarsalida.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -283,14 +287,14 @@ public class Salida_Nueva extends javax.swing.JPanel {
         });
 
         txt_mostrarCantidadActual.setEditable(false);
-        txt_mostrarCantidadActual.setBackground(new java.awt.Color(36, 36, 36));
-        txt_mostrarCantidadActual.setForeground(new java.awt.Color(153, 153, 153));
+        txt_mostrarCantidadActual.setBackground(new java.awt.Color(153, 153, 153));
+        txt_mostrarCantidadActual.setForeground(new java.awt.Color(51, 51, 51));
         txt_mostrarCantidadActual.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(36, 36, 36), 4, true));
 
         jlabel_lista_salidas.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_lista_salidas.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_lista_salidas.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_lista_salidas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/lista.png"))); // NOI18N
+        jlabel_lista_salidas.setForeground(new java.awt.Color(51, 51, 51));
+        jlabel_lista_salidas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/list.png"))); // NOI18N
         jlabel_lista_salidas.setText("LISTA DE SALIDAS");
         jlabel_lista_salidas.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -305,23 +309,23 @@ public class Salida_Nueva extends javax.swing.JPanel {
         });
 
         jLabel6.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel6.setForeground(new java.awt.Color(51, 51, 51));
         jLabel6.setText("ALMACEN");
 
         jLabel7.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel7.setForeground(new java.awt.Color(51, 51, 51));
         jLabel7.setText("ROL");
 
         jLabel8.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel8.setForeground(new java.awt.Color(51, 51, 51));
         jLabel8.setText("STOCK");
 
         jLabel9.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel9.setForeground(new java.awt.Color(51, 51, 51));
         jLabel9.setText("PRODUCTO");
 
         jLabel10.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel10.setForeground(new java.awt.Color(51, 51, 51));
         jLabel10.setText("EMPLEADO");
 
         javax.swing.GroupLayout Jpanel_newSalidaLayout = new javax.swing.GroupLayout(Jpanel_newSalida);

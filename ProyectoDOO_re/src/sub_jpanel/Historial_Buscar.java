@@ -54,10 +54,10 @@ public class Historial_Buscar extends javax.swing.JPanel {
 
         fondo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel_fondo.setBackground(new java.awt.Color(43, 43, 43));
+        jPanel_fondo.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel1.setFont(new java.awt.Font("Malgun Gothic", 0, 16)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel1.setForeground(new java.awt.Color(51, 51, 51));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("BUSQUEDA DE HISTORIAL");
 
@@ -111,8 +111,8 @@ public class Historial_Buscar extends javax.swing.JPanel {
                 .addContainerGap())
         );
 
-        txt_codigo.setBackground(new java.awt.Color(43, 43, 43));
-        txt_codigo.setForeground(new java.awt.Color(153, 153, 153));
+        txt_codigo.setBackground(new java.awt.Color(255, 255, 255));
+        txt_codigo.setForeground(new java.awt.Color(51, 51, 51));
         txt_codigo.setText("Ingrese el codigo a buscar");
         txt_codigo.setBorder(null);
         txt_codigo.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -126,10 +126,12 @@ public class Historial_Buscar extends javax.swing.JPanel {
             }
         });
 
+        jSeparator4.setBackground(new java.awt.Color(51, 51, 51));
+
         jlabel_lista_Historial.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_lista_Historial.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_lista_Historial.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_lista_Historial.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/lista.png"))); // NOI18N
+        jlabel_lista_Historial.setForeground(new java.awt.Color(51, 51, 51));
+        jlabel_lista_Historial.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/list.png"))); // NOI18N
         jlabel_lista_Historial.setText("LISTA DE HISTORIAL");
         jlabel_lista_Historial.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -145,8 +147,8 @@ public class Historial_Buscar extends javax.swing.JPanel {
 
         jlabel_propiedadesHistorial.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_propiedadesHistorial.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_propiedadesHistorial.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_propiedadesHistorial.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Editar_producto.png"))); // NOI18N
+        jlabel_propiedadesHistorial.setForeground(new java.awt.Color(51, 51, 51));
+        jlabel_propiedadesHistorial.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/edit_prod.png"))); // NOI18N
         jlabel_propiedadesHistorial.setText("PROPIEDADES");
         jlabel_propiedadesHistorial.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {

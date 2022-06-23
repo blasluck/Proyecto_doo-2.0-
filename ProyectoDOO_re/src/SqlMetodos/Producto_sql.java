@@ -91,6 +91,8 @@ public class Producto_sql {
     
 
     public void delete_prod(String codigo){    
+        eliminar_Entrada(codigo);
+        eliminar_Salida(codigo );
         try {
             ps = con.prepareStatement("DELETE FROM producto WHERE id_producto=?");
             ps.setString(1, codigo);
@@ -100,6 +102,37 @@ public class Producto_sql {
             System.out.println("Error al eliminar producto: " +e.getMessage());
         }
     }
+    
+    
+    
+    
+    
+    public void eliminar_Entrada(String cod_prod){
+        try {
+             ps = con.prepareStatement("DELETE FROM sistema_entrada WHERE cod_producto=?");
+             ps.setString(1, cod_prod);
+             ps.executeUpdate();
+             ps.close();            
+        } catch (Exception e) {
+            System.out.println("Error al eliminar entradas del producto"+e);
+        }
+       
+    }
+    
+    public void eliminar_Salida(String cod_prod){
+        try {
+             ps = con.prepareStatement("DELETE FROM sistema_salida WHERE cod_producto=?");
+             ps.setString(1, cod_prod);
+             ps.executeUpdate();
+             ps.close();
+            
+        } catch (Exception e) {
+            System.out.println("Error al eliminar salidas"+ e);
+        }
+       
+    }
+    
+    
     
     
     /*METODO PARA GENERAR CODIGO SUCESIVO*/

@@ -91,13 +91,13 @@ public class newEntrada_Editar extends javax.swing.JPanel {
 
         fondo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        Jpanel_nueva_salida.setBackground(new java.awt.Color(43, 43, 43));
+        Jpanel_nueva_salida.setBackground(new java.awt.Color(255, 255, 255));
         Jpanel_nueva_salida.setForeground(new java.awt.Color(153, 153, 153));
 
         jlabel_buscar_entradas.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_buscar_entradas.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_buscar_entradas.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_buscar_entradas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/editar_entrada.png"))); // NOI18N
+        jlabel_buscar_entradas.setForeground(new java.awt.Color(51, 51, 51));
+        jlabel_buscar_entradas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/fech_registr.png"))); // NOI18N
         jlabel_buscar_entradas.setText("BUSCAR ENTRADAS (FECHA)");
         jlabel_buscar_entradas.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -113,8 +113,8 @@ public class newEntrada_Editar extends javax.swing.JPanel {
 
         jlabel_nueva_entrada.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_nueva_entrada.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_nueva_entrada.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_nueva_entrada.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/nueva_entrada.png"))); // NOI18N
+        jlabel_nueva_entrada.setForeground(new java.awt.Color(51, 51, 51));
+        jlabel_nueva_entrada.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/new_entrad.png"))); // NOI18N
         jlabel_nueva_entrada.setText("NUEVA ENTRADA");
         jlabel_nueva_entrada.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -129,20 +129,20 @@ public class newEntrada_Editar extends javax.swing.JPanel {
         });
 
         jLabel2.setFont(new java.awt.Font("Malgun Gothic", 0, 16)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel2.setForeground(new java.awt.Color(51, 51, 51));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("EDITAR ENTRADA DE PRODUCTOS");
 
         jLabel5.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel5.setForeground(new java.awt.Color(51, 51, 51));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/new_Entrada.png"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/new_entr.png"))); // NOI18N
         jLabel5.setText("INFORMACION DE ENTRADA");
 
         jlabel_lista_entradas.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_lista_entradas.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_lista_entradas.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_lista_entradas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/lista.png"))); // NOI18N
+        jlabel_lista_entradas.setForeground(new java.awt.Color(51, 51, 51));
+        jlabel_lista_entradas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/list.png"))); // NOI18N
         jlabel_lista_entradas.setText("LISTA DE ENTRADAS");
         jlabel_lista_entradas.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -157,11 +157,11 @@ public class newEntrada_Editar extends javax.swing.JPanel {
         });
 
         jLabel13.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel13.setForeground(new java.awt.Color(51, 51, 51));
         jLabel13.setText("CODIGO DEL PRODUCTO");
 
-        txt_buscarcod.setBackground(new java.awt.Color(43, 43, 43));
-        txt_buscarcod.setForeground(new java.awt.Color(153, 153, 153));
+        txt_buscarcod.setBackground(new java.awt.Color(255, 255, 255));
+        txt_buscarcod.setForeground(new java.awt.Color(51, 51, 51));
         txt_buscarcod.setBorder(null);
 
         btn_searchcode.setBackground(new java.awt.Color(36, 36, 36));
@@ -189,12 +189,12 @@ public class newEntrada_Editar extends javax.swing.JPanel {
         );
 
         jLabel9.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel9.setForeground(new java.awt.Color(51, 51, 51));
         jLabel9.setText("PRODUCTO");
 
         txt_mostrarnombrePord.setEditable(false);
-        txt_mostrarnombrePord.setBackground(new java.awt.Color(36, 36, 36));
-        txt_mostrarnombrePord.setForeground(new java.awt.Color(153, 153, 153));
+        txt_mostrarnombrePord.setBackground(new java.awt.Color(204, 204, 204));
+        txt_mostrarnombrePord.setForeground(new java.awt.Color(51, 51, 51));
         txt_mostrarnombrePord.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(36, 36, 36), 4, true));
         txt_mostrarnombrePord.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -203,20 +203,20 @@ public class newEntrada_Editar extends javax.swing.JPanel {
         });
 
         jLabel8.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel8.setForeground(new java.awt.Color(51, 51, 51));
         jLabel8.setText("CANTIDAD INGRESO");
 
-        txt_mostrarCantidadActual.setBackground(new java.awt.Color(36, 36, 36));
-        txt_mostrarCantidadActual.setForeground(new java.awt.Color(153, 153, 153));
+        txt_mostrarCantidadActual.setBackground(new java.awt.Color(204, 204, 204));
+        txt_mostrarCantidadActual.setForeground(new java.awt.Color(51, 51, 51));
         txt_mostrarCantidadActual.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(36, 36, 36), 4, true));
 
         jLabel14.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel14.setForeground(new java.awt.Color(51, 51, 51));
         jLabel14.setText("TIPO");
 
         txt_mostrarTipo.setEditable(false);
-        txt_mostrarTipo.setBackground(new java.awt.Color(36, 36, 36));
-        txt_mostrarTipo.setForeground(new java.awt.Color(153, 153, 153));
+        txt_mostrarTipo.setBackground(new java.awt.Color(204, 204, 204));
+        txt_mostrarTipo.setForeground(new java.awt.Color(51, 51, 51));
         txt_mostrarTipo.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(36, 36, 36), 4, true));
         txt_mostrarTipo.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -225,12 +225,12 @@ public class newEntrada_Editar extends javax.swing.JPanel {
         });
 
         jLabel6.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel6.setForeground(new java.awt.Color(51, 51, 51));
         jLabel6.setText("ALMACEN");
 
         txt_mostrarAlmacen.setEditable(false);
-        txt_mostrarAlmacen.setBackground(new java.awt.Color(36, 36, 36));
-        txt_mostrarAlmacen.setForeground(new java.awt.Color(153, 153, 153));
+        txt_mostrarAlmacen.setBackground(new java.awt.Color(204, 204, 204));
+        txt_mostrarAlmacen.setForeground(new java.awt.Color(51, 51, 51));
         txt_mostrarAlmacen.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(36, 36, 36), 4, true));
         txt_mostrarAlmacen.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -239,11 +239,11 @@ public class newEntrada_Editar extends javax.swing.JPanel {
         });
 
         jLabel12.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel12.setForeground(new java.awt.Color(51, 51, 51));
         jLabel12.setText("CODIGO DEL EMPLEADO");
 
-        txt_buscarempled.setBackground(new java.awt.Color(43, 43, 43));
-        txt_buscarempled.setForeground(new java.awt.Color(153, 153, 153));
+        txt_buscarempled.setBackground(new java.awt.Color(255, 255, 255));
+        txt_buscarempled.setForeground(new java.awt.Color(51, 51, 51));
         txt_buscarempled.setBorder(null);
         txt_buscarempled.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -275,12 +275,12 @@ public class newEntrada_Editar extends javax.swing.JPanel {
         );
 
         jLabel10.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel10.setForeground(new java.awt.Color(51, 51, 51));
         jLabel10.setText("EMPLEADO");
 
         txt_mostrarNameEmpl.setEditable(false);
-        txt_mostrarNameEmpl.setBackground(new java.awt.Color(36, 36, 36));
-        txt_mostrarNameEmpl.setForeground(new java.awt.Color(153, 153, 153));
+        txt_mostrarNameEmpl.setBackground(new java.awt.Color(204, 204, 204));
+        txt_mostrarNameEmpl.setForeground(new java.awt.Color(51, 51, 51));
         txt_mostrarNameEmpl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(36, 36, 36), 4, true));
         txt_mostrarNameEmpl.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -289,8 +289,8 @@ public class newEntrada_Editar extends javax.swing.JPanel {
         });
 
         txt_mostrar_rol.setEditable(false);
-        txt_mostrar_rol.setBackground(new java.awt.Color(36, 36, 36));
-        txt_mostrar_rol.setForeground(new java.awt.Color(153, 153, 153));
+        txt_mostrar_rol.setBackground(new java.awt.Color(204, 204, 204));
+        txt_mostrar_rol.setForeground(new java.awt.Color(51, 51, 51));
         txt_mostrar_rol.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(36, 36, 36), 4, true));
         txt_mostrar_rol.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -299,13 +299,13 @@ public class newEntrada_Editar extends javax.swing.JPanel {
         });
 
         jLabel7.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel7.setForeground(new java.awt.Color(51, 51, 51));
         jLabel7.setText("ROL");
 
         jLabel15.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel15.setForeground(new java.awt.Color(51, 51, 51));
         jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/fehca_registro.png"))); // NOI18N
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/fech_registr.png"))); // NOI18N
         jLabel15.setText("FECHA DE REGISTRO");
 
         jday_f_ingreso.setBackground(new java.awt.Color(43, 43, 43));
@@ -313,8 +313,8 @@ public class newEntrada_Editar extends javax.swing.JPanel {
 
         jlabel_editar_entrada.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_editar_entrada.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_editar_entrada.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_editar_entrada.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/edit.png"))); // NOI18N
+        jlabel_editar_entrada.setForeground(new java.awt.Color(51, 51, 51));
+        jlabel_editar_entrada.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/editr.png"))); // NOI18N
         jlabel_editar_entrada.setText("EDITAR ENTRADA");
         jlabel_editar_entrada.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -330,8 +330,8 @@ public class newEntrada_Editar extends javax.swing.JPanel {
 
         jlabel_cancelarentrada.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_cancelarentrada.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_cancelarentrada.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_cancelarentrada.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/cancelar..png"))); // NOI18N
+        jlabel_cancelarentrada.setForeground(new java.awt.Color(51, 51, 51));
+        jlabel_cancelarentrada.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/cancelar.png"))); // NOI18N
         jlabel_cancelarentrada.setText("ELIMINAR ENTRADA");
         jlabel_cancelarentrada.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -411,53 +411,49 @@ public class newEntrada_Editar extends javax.swing.JPanel {
                                         .addComponent(jLabel7)))
                                 .addGap(0, 235, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Jpanel_nueva_salidaLayout.createSequentialGroup()
-                                .addGroup(Jpanel_nueva_salidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(Jpanel_nueva_salidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(jSeparator6, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txt_buscarempled, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(12, 12, 12)
+                                .addGroup(Jpanel_nueva_salidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(Jpanel_nueva_salidaLayout.createSequentialGroup()
-                                        .addGroup(Jpanel_nueva_salidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                            .addComponent(jSeparator6, javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(txt_buscarempled, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGap(12, 12, 12)
+                                        .addComponent(btn_searchempleado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addGroup(Jpanel_nueva_salidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(txt_mostrarNameEmpl, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jSeparator11, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(298, 346, Short.MAX_VALUE))
+                                    .addGroup(Jpanel_nueva_salidaLayout.createSequentialGroup()
                                         .addGroup(Jpanel_nueva_salidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addGroup(Jpanel_nueva_salidaLayout.createSequentialGroup()
-                                                .addComponent(btn_searchempleado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(18, 18, 18)
-                                                .addGroup(Jpanel_nueva_salidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(txt_mostrarNameEmpl, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(jSeparator11, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addGap(298, 346, Short.MAX_VALUE))
+                                                .addGap(224, 224, 224)
+                                                .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                             .addGroup(Jpanel_nueva_salidaLayout.createSequentialGroup()
                                                 .addGroup(Jpanel_nueva_salidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addGroup(Jpanel_nueva_salidaLayout.createSequentialGroup()
-                                                        .addGap(224, 224, 224)
-                                                        .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                                    .addGroup(Jpanel_nueva_salidaLayout.createSequentialGroup()
-                                                        .addGroup(Jpanel_nueva_salidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                            .addComponent(btn_searchcode, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                            .addGroup(Jpanel_nueva_salidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                                .addComponent(txt_mostrarCantidadActual, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, Jpanel_nueva_salidaLayout.createSequentialGroup()
-                                                                    .addGap(224, 224, 224)
-                                                                    .addComponent(jSeparator8, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                                        .addGap(0, 0, Short.MAX_VALUE)))
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addGroup(Jpanel_nueva_salidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jSeparator9, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(txt_mostrarTipo, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(jLabel14))
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addGroup(Jpanel_nueva_salidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                    .addComponent(jSeparator10, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(txt_mostrarAlmacen, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Jpanel_nueva_salidaLayout.createSequentialGroup()
-                                                .addGap(0, 0, Short.MAX_VALUE)
-                                                .addComponent(jlabel_cancelarentrada, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(9, 9, 9))))
-                                    .addGroup(Jpanel_nueva_salidaLayout.createSequentialGroup()
-                                        .addGap(123, 123, 123)
-                                        .addComponent(jlabel_editar_entrada, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(0, 0, Short.MAX_VALUE)))
-                                .addGap(47, 47, 47))))))
+                                                    .addComponent(btn_searchcode, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addGroup(Jpanel_nueva_salidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                        .addComponent(txt_mostrarCantidadActual, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, Jpanel_nueva_salidaLayout.createSequentialGroup()
+                                                            .addGap(224, 224, 224)
+                                                            .addComponent(jSeparator8, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                                .addGap(0, 0, Short.MAX_VALUE)))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addGroup(Jpanel_nueva_salidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jSeparator9, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(txt_mostrarTipo, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jLabel14))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addGroup(Jpanel_nueva_salidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(jSeparator10, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(txt_mostrarAlmacen, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addGap(47, 47, 47))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Jpanel_nueva_salidaLayout.createSequentialGroup()
+                                .addGap(123, 123, 123)
+                                .addComponent(jlabel_editar_entrada, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jlabel_cancelarentrada, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(140, 140, 140))))))
         );
         Jpanel_nueva_salidaLayout.setVerticalGroup(
             Jpanel_nueva_salidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

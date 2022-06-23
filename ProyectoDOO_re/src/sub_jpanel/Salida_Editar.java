@@ -71,18 +71,13 @@ public class Salida_Editar extends javax.swing.JPanel {
         txt_buscarempled = new javax.swing.JTextField();
         jSeparator6 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
-        jSeparator7 = new javax.swing.JSeparator();
         jSeparator8 = new javax.swing.JSeparator();
-        jSeparator9 = new javax.swing.JSeparator();
-        jSeparator10 = new javax.swing.JSeparator();
         btn_searchEmplead = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         txt_mostrarNameEmpl = new javax.swing.JTextField();
-        jSeparator11 = new javax.swing.JSeparator();
         txt_mostrar_rol = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
-        jSeparator12 = new javax.swing.JSeparator();
         jLabel15 = new javax.swing.JLabel();
         jday_salida = new com.toedter.calendar.JDateChooser();
         jlabel_agregarprod = new javax.swing.JLabel();
@@ -95,13 +90,13 @@ public class Salida_Editar extends javax.swing.JPanel {
 
         fondo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        Jpanel_newSalida.setBackground(new java.awt.Color(43, 43, 43));
-        Jpanel_newSalida.setForeground(new java.awt.Color(153, 153, 153));
+        Jpanel_newSalida.setBackground(new java.awt.Color(255, 255, 255));
+        Jpanel_newSalida.setForeground(new java.awt.Color(51, 51, 51));
 
         jlabel_buscar_salida.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_buscar_salida.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_buscar_salida.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_buscar_salida.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/editar_entrada.png"))); // NOI18N
+        jlabel_buscar_salida.setForeground(new java.awt.Color(51, 51, 51));
+        jlabel_buscar_salida.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/fech_registr.png"))); // NOI18N
         jlabel_buscar_salida.setText("BUSCAR SALIDAS (FECHA)");
         jlabel_buscar_salida.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -117,8 +112,8 @@ public class Salida_Editar extends javax.swing.JPanel {
 
         jlabel_nueva_salida.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_nueva_salida.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_nueva_salida.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_nueva_salida.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/nueva_entrada.png"))); // NOI18N
+        jlabel_nueva_salida.setForeground(new java.awt.Color(51, 51, 51));
+        jlabel_nueva_salida.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/new_entrad.png"))); // NOI18N
         jlabel_nueva_salida.setText("NUEVA SALIDA");
         jlabel_nueva_salida.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -133,20 +128,20 @@ public class Salida_Editar extends javax.swing.JPanel {
         });
 
         jLabel2.setFont(new java.awt.Font("Malgun Gothic", 0, 16)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel2.setForeground(new java.awt.Color(51, 51, 51));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("EDITAR SALIDA DE PRODUCTOS");
 
         jLabel5.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel5.setForeground(new java.awt.Color(51, 51, 51));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/nueva_salida.png"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Salida_editar.png"))); // NOI18N
         jLabel5.setText("INFORMACION DE SALIDA");
 
         jlabel_lista_salidas.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_lista_salidas.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_lista_salidas.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_lista_salidas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/lista.png"))); // NOI18N
+        jlabel_lista_salidas.setForeground(new java.awt.Color(51, 51, 51));
+        jlabel_lista_salidas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/list.png"))); // NOI18N
         jlabel_lista_salidas.setText("LISTA DE SALIDAS");
         jlabel_lista_salidas.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -161,11 +156,11 @@ public class Salida_Editar extends javax.swing.JPanel {
         });
 
         jLabel13.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel13.setForeground(new java.awt.Color(51, 51, 51));
         jLabel13.setText("CODIGO DEL PRODUCTO");
 
-        txt_buscarcod.setBackground(new java.awt.Color(43, 43, 43));
-        txt_buscarcod.setForeground(new java.awt.Color(153, 153, 153));
+        txt_buscarcod.setBackground(new java.awt.Color(255, 255, 255));
+        txt_buscarcod.setForeground(new java.awt.Color(51, 51, 51));
         txt_buscarcod.setBorder(null);
 
         btn_seachProd.setBackground(new java.awt.Color(36, 36, 36));
@@ -195,52 +190,58 @@ public class Salida_Editar extends javax.swing.JPanel {
         );
 
         jLabel9.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel9.setForeground(new java.awt.Color(51, 51, 51));
         jLabel9.setText("PRODUCTO");
 
         txt_mostrarnombrePord.setEditable(false);
-        txt_mostrarnombrePord.setBackground(new java.awt.Color(36, 36, 36));
-        txt_mostrarnombrePord.setForeground(new java.awt.Color(153, 153, 153));
+        txt_mostrarnombrePord.setBackground(new java.awt.Color(204, 204, 204));
+        txt_mostrarnombrePord.setForeground(new java.awt.Color(51, 51, 51));
         txt_mostrarnombrePord.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(36, 36, 36), 4, true));
 
         jLabel8.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel8.setForeground(new java.awt.Color(51, 51, 51));
         jLabel8.setText("EXTRACCION");
 
-        txt_mostrarCantidadActual.setBackground(new java.awt.Color(36, 36, 36));
-        txt_mostrarCantidadActual.setForeground(new java.awt.Color(153, 153, 153));
+        txt_mostrarCantidadActual.setBackground(new java.awt.Color(255, 255, 255));
+        txt_mostrarCantidadActual.setForeground(new java.awt.Color(51, 51, 51));
         txt_mostrarCantidadActual.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(36, 36, 36), 4, true));
 
         jLabel14.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel14.setForeground(new java.awt.Color(51, 51, 51));
         jLabel14.setText("TIPO");
 
         txt_mostrarTipo.setEditable(false);
-        txt_mostrarTipo.setBackground(new java.awt.Color(36, 36, 36));
-        txt_mostrarTipo.setForeground(new java.awt.Color(153, 153, 153));
+        txt_mostrarTipo.setBackground(new java.awt.Color(204, 204, 204));
+        txt_mostrarTipo.setForeground(new java.awt.Color(51, 51, 51));
         txt_mostrarTipo.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(36, 36, 36), 4, true));
 
         jLabel6.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel6.setForeground(new java.awt.Color(51, 51, 51));
         jLabel6.setText("ALMACEN");
 
         txt_mostrarAlmacen.setEditable(false);
-        txt_mostrarAlmacen.setBackground(new java.awt.Color(36, 36, 36));
-        txt_mostrarAlmacen.setForeground(new java.awt.Color(153, 153, 153));
+        txt_mostrarAlmacen.setBackground(new java.awt.Color(204, 204, 204));
+        txt_mostrarAlmacen.setForeground(new java.awt.Color(51, 51, 51));
         txt_mostrarAlmacen.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(36, 36, 36), 4, true));
 
         jLabel12.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel12.setForeground(new java.awt.Color(51, 51, 51));
         jLabel12.setText("CODIGO DEL EMPLEADO");
 
-        txt_buscarempled.setBackground(new java.awt.Color(43, 43, 43));
-        txt_buscarempled.setForeground(new java.awt.Color(153, 153, 153));
+        txt_buscarempled.setBackground(new java.awt.Color(255, 255, 255));
+        txt_buscarempled.setForeground(new java.awt.Color(51, 51, 51));
         txt_buscarempled.setBorder(null);
         txt_buscarempled.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txt_buscarempledActionPerformed(evt);
             }
         });
+
+        jSeparator6.setBackground(new java.awt.Color(51, 51, 51));
+
+        jSeparator3.setBackground(new java.awt.Color(51, 51, 51));
+
+        jSeparator8.setBackground(new java.awt.Color(51, 51, 51));
 
         btn_searchEmplead.setBackground(new java.awt.Color(36, 36, 36));
         btn_searchEmplead.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(36, 36, 36), 4, true));
@@ -268,27 +269,27 @@ public class Salida_Editar extends javax.swing.JPanel {
         );
 
         jLabel10.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel10.setForeground(new java.awt.Color(51, 51, 51));
         jLabel10.setText("EMPLEADO");
 
         txt_mostrarNameEmpl.setEditable(false);
-        txt_mostrarNameEmpl.setBackground(new java.awt.Color(36, 36, 36));
-        txt_mostrarNameEmpl.setForeground(new java.awt.Color(153, 153, 153));
+        txt_mostrarNameEmpl.setBackground(new java.awt.Color(204, 204, 204));
+        txt_mostrarNameEmpl.setForeground(new java.awt.Color(51, 51, 51));
         txt_mostrarNameEmpl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(36, 36, 36), 4, true));
 
         txt_mostrar_rol.setEditable(false);
-        txt_mostrar_rol.setBackground(new java.awt.Color(36, 36, 36));
-        txt_mostrar_rol.setForeground(new java.awt.Color(153, 153, 153));
+        txt_mostrar_rol.setBackground(new java.awt.Color(204, 204, 204));
+        txt_mostrar_rol.setForeground(new java.awt.Color(51, 51, 51));
         txt_mostrar_rol.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(36, 36, 36), 4, true));
 
         jLabel7.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel7.setForeground(new java.awt.Color(51, 51, 51));
         jLabel7.setText("ROL");
 
         jLabel15.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel15.setForeground(new java.awt.Color(51, 51, 51));
         jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/fehca_registro.png"))); // NOI18N
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/fech_registr.png"))); // NOI18N
         jLabel15.setText("FECHA DE SALIDA");
 
         jday_salida.setBackground(new java.awt.Color(43, 43, 43));
@@ -296,8 +297,8 @@ public class Salida_Editar extends javax.swing.JPanel {
 
         jlabel_agregarprod.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_agregarprod.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_agregarprod.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_agregarprod.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/edit.png"))); // NOI18N
+        jlabel_agregarprod.setForeground(new java.awt.Color(51, 51, 51));
+        jlabel_agregarprod.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/editr.png"))); // NOI18N
         jlabel_agregarprod.setText("EDITAR SALIDA");
         jlabel_agregarprod.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -313,8 +314,8 @@ public class Salida_Editar extends javax.swing.JPanel {
 
         jlabel_cancelar1.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_cancelar1.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_cancelar1.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_cancelar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/cancelar..png"))); // NOI18N
+        jlabel_cancelar1.setForeground(new java.awt.Color(51, 51, 51));
+        jlabel_cancelar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/cancelar.png"))); // NOI18N
         jlabel_cancelar1.setText("ELIMINAR SALIDA");
         jlabel_cancelar1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -381,14 +382,11 @@ public class Salida_Editar extends javax.swing.JPanel {
                                         .addGroup(Jpanel_newSalidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                             .addGroup(Jpanel_newSalidaLayout.createSequentialGroup()
                                                 .addGap(158, 158, 158)
-                                                .addGroup(Jpanel_newSalidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jSeparator12, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(txt_mostrar_rol, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                                .addComponent(txt_mostrar_rol, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGroup(Jpanel_newSalidaLayout.createSequentialGroup()
                                                 .addGroup(Jpanel_newSalidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                     .addComponent(jLabel10)
                                                     .addComponent(txt_mostrarnombrePord, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(jSeparator7, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                     .addComponent(jLabel9))
                                                 .addGap(28, 28, 28)
                                                 .addGroup(Jpanel_newSalidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -406,21 +404,14 @@ public class Salida_Editar extends javax.swing.JPanel {
                                             .addGroup(Jpanel_newSalidaLayout.createSequentialGroup()
                                                 .addComponent(btn_searchEmplead, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addGap(18, 18, 18)
-                                                .addGroup(Jpanel_newSalidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(txt_mostrarNameEmpl, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(jSeparator11, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addGap(298, 298, 298))
+                                                .addComponent(txt_mostrarNameEmpl, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGroup(Jpanel_newSalidaLayout.createSequentialGroup()
                                                 .addComponent(btn_seachProd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addGap(300, 300, 300)
                                                 .addGroup(Jpanel_newSalidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                    .addGroup(Jpanel_newSalidaLayout.createSequentialGroup()
-                                                        .addGroup(Jpanel_newSalidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                            .addComponent(jSeparator9, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                            .addComponent(txt_mostrarTipo, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                            .addComponent(jLabel14))
-                                                        .addGap(18, 18, 18)
-                                                        .addComponent(jSeparator10, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                    .addGroup(Jpanel_newSalidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addComponent(txt_mostrarTipo, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(jLabel14))
                                                     .addGroup(Jpanel_newSalidaLayout.createSequentialGroup()
                                                         .addGap(123, 123, 123)
                                                         .addGroup(Jpanel_newSalidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -452,27 +443,22 @@ public class Salida_Editar extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(Jpanel_newSalidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(Jpanel_newSalidaLayout.createSequentialGroup()
-                        .addGroup(Jpanel_newSalidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(Jpanel_newSalidaLayout.createSequentialGroup()
-                                .addGroup(Jpanel_newSalidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel9)
-                                    .addComponent(jLabel13)
-                                    .addComponent(jLabel8)
-                                    .addComponent(jLabel6)
-                                    .addComponent(jLabel14))
-                                .addGap(3, 3, 3)
-                                .addGroup(Jpanel_newSalidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(txt_buscarcod, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txt_mostrarnombrePord, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txt_mostrarCantidadActual, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txt_mostrarTipo, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txt_mostrarAlmacen, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(Jpanel_newSalidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jSeparator10)
-                                    .addComponent(jSeparator8)
-                                    .addComponent(jSeparator3)
-                                    .addComponent(jSeparator9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(jSeparator7, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(Jpanel_newSalidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel9)
+                            .addComponent(jLabel13)
+                            .addComponent(jLabel8)
+                            .addComponent(jLabel6)
+                            .addComponent(jLabel14))
+                        .addGap(3, 3, 3)
+                        .addGroup(Jpanel_newSalidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txt_buscarcod, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txt_mostrarnombrePord, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txt_mostrarCantidadActual, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txt_mostrarTipo, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txt_mostrarAlmacen, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(Jpanel_newSalidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jSeparator8, javax.swing.GroupLayout.DEFAULT_SIZE, 10, Short.MAX_VALUE)
+                            .addComponent(jSeparator3))
                         .addGap(20, 20, 20)
                         .addGroup(Jpanel_newSalidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel10)
@@ -487,10 +473,7 @@ public class Salida_Editar extends javax.swing.JPanel {
                         .addComponent(btn_seachProd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(50, 50, 50)
                         .addComponent(btn_searchEmplead, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGroup(Jpanel_newSalidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jSeparator11, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jSeparator12, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(16, 16, 16)
                 .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -728,15 +711,10 @@ public class Salida_Editar extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JSeparator jSeparator10;
-    private javax.swing.JSeparator jSeparator11;
-    private javax.swing.JSeparator jSeparator12;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator6;
-    private javax.swing.JSeparator jSeparator7;
     private javax.swing.JSeparator jSeparator8;
-    private javax.swing.JSeparator jSeparator9;
     private com.toedter.calendar.JDateChooser jday_salida;
     private javax.swing.JLabel jlabel_agregarprod;
     private javax.swing.JLabel jlabel_buscar_salida;

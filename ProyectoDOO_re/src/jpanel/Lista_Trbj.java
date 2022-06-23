@@ -73,7 +73,7 @@ public class Lista_Trbj extends javax.swing.JPanel {
         list_jpnael.setBackground(new java.awt.Color(43, 43, 43));
         list_jpnael.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        panelito.setBackground(new java.awt.Color(43, 43, 43));
+        panelito.setBackground(new java.awt.Color(255, 255, 255));
 
         TABLA_TRABAJADORES.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -100,8 +100,8 @@ public class Lista_Trbj extends javax.swing.JPanel {
 
         jlabel_nuevo_trabajador.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_nuevo_trabajador.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_nuevo_trabajador.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_nuevo_trabajador.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/nuevo_trbj.png"))); // NOI18N
+        jlabel_nuevo_trabajador.setForeground(new java.awt.Color(51, 51, 51));
+        jlabel_nuevo_trabajador.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/trbjadores.png"))); // NOI18N
         jlabel_nuevo_trabajador.setText("NUEVO TRABAJADOR");
         jlabel_nuevo_trabajador.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -117,8 +117,8 @@ public class Lista_Trbj extends javax.swing.JPanel {
 
         jlabel_buscar_trabajador.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_buscar_trabajador.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_buscar_trabajador.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_buscar_trabajador.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/buscar_trabajor.png"))); // NOI18N
+        jlabel_buscar_trabajador.setForeground(new java.awt.Color(51, 51, 51));
+        jlabel_buscar_trabajador.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/buscar_trbj.png"))); // NOI18N
         jlabel_buscar_trabajador.setText("BUSCAR TRABAJADOR");
         jlabel_buscar_trabajador.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -134,8 +134,8 @@ public class Lista_Trbj extends javax.swing.JPanel {
 
         jlabel_editar_trabajador.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_editar_trabajador.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_editar_trabajador.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_editar_trabajador.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Editar_producto.png"))); // NOI18N
+        jlabel_editar_trabajador.setForeground(new java.awt.Color(51, 51, 51));
+        jlabel_editar_trabajador.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/edit_prod.png"))); // NOI18N
         jlabel_editar_trabajador.setText("EDITAR TRABAJADOR");
         jlabel_editar_trabajador.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -150,9 +150,13 @@ public class Lista_Trbj extends javax.swing.JPanel {
         });
 
         jLabel1.setFont(new java.awt.Font("Malgun Gothic", 0, 16)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel1.setForeground(new java.awt.Color(51, 51, 51));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("TRABAJADORES");
+
+        jSeparator1.setBackground(new java.awt.Color(51, 51, 51));
+
+        jSeparator2.setBackground(new java.awt.Color(51, 51, 51));
 
         javax.swing.GroupLayout panelitoLayout = new javax.swing.GroupLayout(panelito);
         panelito.setLayout(panelitoLayout);

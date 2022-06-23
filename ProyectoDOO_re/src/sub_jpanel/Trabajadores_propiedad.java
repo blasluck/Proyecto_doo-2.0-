@@ -85,21 +85,22 @@ public class Trabajadores_propiedad extends javax.swing.JPanel {
 
         fondo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        list_jpnael.setBackground(new java.awt.Color(43, 43, 43));
+        list_jpnael.setBackground(new java.awt.Color(255, 255, 255));
+        list_jpnael.setForeground(new java.awt.Color(51, 51, 51));
 
-        jSeparator1.setBackground(new java.awt.Color(153, 153, 153));
+        jSeparator1.setBackground(new java.awt.Color(51, 51, 51));
 
         jLabel2.setFont(new java.awt.Font("Malgun Gothic", 0, 16)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel2.setForeground(new java.awt.Color(51, 51, 51));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText(" PROPIEDAD DEL TRABAJADOR");
 
-        jSeparator3.setBackground(new java.awt.Color(153, 153, 153));
+        jSeparator3.setBackground(new java.awt.Color(51, 51, 51));
 
         jlabel_lista_trbj.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_lista_trbj.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_lista_trbj.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_lista_trbj.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/lista.png"))); // NOI18N
+        jlabel_lista_trbj.setForeground(new java.awt.Color(51, 51, 51));
+        jlabel_lista_trbj.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/list.png"))); // NOI18N
         jlabel_lista_trbj.setText("LISTA DE TRABAJADORES");
         jlabel_lista_trbj.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -115,8 +116,8 @@ public class Trabajadores_propiedad extends javax.swing.JPanel {
 
         jlabel_lista_editar_trbj.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_lista_editar_trbj.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_lista_editar_trbj.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_lista_editar_trbj.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Editar_producto.png"))); // NOI18N
+        jlabel_lista_editar_trbj.setForeground(new java.awt.Color(51, 51, 51));
+        jlabel_lista_editar_trbj.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/edit_prod.png"))); // NOI18N
         jlabel_lista_editar_trbj.setText("EDITAR TRABAJADOR");
         jlabel_lista_editar_trbj.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -132,8 +133,8 @@ public class Trabajadores_propiedad extends javax.swing.JPanel {
 
         jlabel_buscar_trbj.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_buscar_trbj.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_buscar_trbj.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_buscar_trbj.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/buscar_trabajor.png"))); // NOI18N
+        jlabel_buscar_trbj.setForeground(new java.awt.Color(51, 51, 51));
+        jlabel_buscar_trbj.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/buscar_trbj.png"))); // NOI18N
         jlabel_buscar_trbj.setText("BUSCAR TRABAJADOR");
         jlabel_buscar_trbj.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -148,25 +149,25 @@ public class Trabajadores_propiedad extends javax.swing.JPanel {
         });
 
         jLabel9.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel9.setForeground(new java.awt.Color(51, 51, 51));
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/new_Entrada.png"))); // NOI18N
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/trbjadores.png"))); // NOI18N
         jLabel9.setText("DATOS PERSONALES");
 
         jLabel19.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jLabel19.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel19.setForeground(new java.awt.Color(51, 51, 51));
         jLabel19.setText("NOMBRES");
 
-        txt_nombre.setBackground(new java.awt.Color(43, 43, 43));
-        txt_nombre.setForeground(new java.awt.Color(153, 153, 153));
+        txt_nombre.setBackground(new java.awt.Color(255, 255, 255));
+        txt_nombre.setForeground(new java.awt.Color(51, 51, 51));
         txt_nombre.setBorder(null);
 
         jLabel16.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel16.setForeground(new java.awt.Color(51, 51, 51));
         jLabel16.setText("APELLIDOS");
 
-        txt_apellidos.setBackground(new java.awt.Color(43, 43, 43));
-        txt_apellidos.setForeground(new java.awt.Color(153, 153, 153));
+        txt_apellidos.setBackground(new java.awt.Color(255, 255, 255));
+        txt_apellidos.setForeground(new java.awt.Color(51, 51, 51));
         txt_apellidos.setBorder(null);
 
         jpanel_foto.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -183,7 +184,7 @@ public class Trabajadores_propiedad extends javax.swing.JPanel {
         );
 
         jLabel13.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel13.setForeground(new java.awt.Color(51, 51, 51));
         jLabel13.setText("CARGO");
 
         jcombo_cargo.setBackground(new java.awt.Color(43, 43, 43));
@@ -191,27 +192,27 @@ public class Trabajadores_propiedad extends javax.swing.JPanel {
         jcombo_cargo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "Soldador", "Electricista", "Mecanico", "Ayudante" }));
 
         jLabel17.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jLabel17.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel17.setForeground(new java.awt.Color(51, 51, 51));
         jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/fehca_registro.png"))); // NOI18N
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/fech_registr.png"))); // NOI18N
         jLabel17.setText("FECHAS REGISTRADAS");
 
         jLabel20.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jLabel20.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel20.setForeground(new java.awt.Color(51, 51, 51));
         jLabel20.setText("FECHA DE NACIMIENTO");
 
         jday_fecha_nac.setBackground(new java.awt.Color(43, 43, 43));
 
         jLabel14.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel14.setForeground(new java.awt.Color(51, 51, 51));
         jLabel14.setText("FECHA DE INGRESO");
 
         jday_fecha_ingreso.setBackground(new java.awt.Color(43, 43, 43));
 
         jlabel_edit_trbj.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_edit_trbj.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_edit_trbj.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_edit_trbj.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/edit.png"))); // NOI18N
+        jlabel_edit_trbj.setForeground(new java.awt.Color(51, 51, 51));
+        jlabel_edit_trbj.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/editr.png"))); // NOI18N
         jlabel_edit_trbj.setText("EDITAR TRABAJADOR");
         jlabel_edit_trbj.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -225,14 +226,14 @@ public class Trabajadores_propiedad extends javax.swing.JPanel {
             }
         });
 
-        jSeparator4.setBackground(new java.awt.Color(153, 153, 153));
+        jSeparator4.setBackground(new java.awt.Color(51, 51, 51));
 
-        jSeparator5.setBackground(new java.awt.Color(153, 153, 153));
+        jSeparator5.setBackground(new java.awt.Color(51, 51, 51));
 
         jlabel_delete_trbj.setBackground(new java.awt.Color(153, 153, 153));
         jlabel_delete_trbj.setFont(new java.awt.Font("Malgun Gothic", 0, 12)); // NOI18N
-        jlabel_delete_trbj.setForeground(new java.awt.Color(153, 153, 153));
-        jlabel_delete_trbj.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/delete_trbj.png"))); // NOI18N
+        jlabel_delete_trbj.setForeground(new java.awt.Color(51, 51, 51));
+        jlabel_delete_trbj.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/delet_trbj.png"))); // NOI18N
         jlabel_delete_trbj.setText("ELIMINAR TRABAJADOR");
         jlabel_delete_trbj.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -356,14 +357,13 @@ public class Trabajadores_propiedad extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jpanel_foto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(list_jpnaelLayout.createSequentialGroup()
-                        .addGroup(list_jpnaelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(10, 10, 10)
+                        .addGroup(list_jpnaelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(list_jpnaelLayout.createSequentialGroup()
-                                .addGap(50, 50, 50)
                                 .addComponent(jLabel16)
-                                .addGap(0, 0, 0)
-                                .addComponent(txt_apellidos, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txt_apellidos, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(list_jpnaelLayout.createSequentialGroup()
-                                .addGap(10, 10, 10)
                                 .addComponent(jLabel9)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel19)
