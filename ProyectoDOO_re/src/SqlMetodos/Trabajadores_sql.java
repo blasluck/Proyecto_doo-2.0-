@@ -122,6 +122,8 @@ public class Trabajadores_sql {
     }   
     
     public void delete_Trbj(String codigo_trbj){
+        eliminar_Entrada(codigo_trbj);
+        eliminar_Salida(codigo_trbj);
         try {
             ps = con.prepareStatement("SELECT * FROM trabajadores WHERE id_trabajador= ?") ;
             ps.setString(1, codigo_trbj);
@@ -143,6 +145,32 @@ public class Trabajadores_sql {
         } catch (Exception e) {
             System.out.println("Error al eliminar Trabajador: "+ e.getMessage());
         }
+    }
+    
+    
+     public void eliminar_Entrada(String cod_trbj){
+        try {
+             ps = con.prepareStatement("DELETE FROM sistema_entrada WHERE cod_trabajador=?");
+             ps.setString(1, cod_trbj);
+             ps.executeUpdate();
+             ps.close();            
+        } catch (Exception e) {
+            System.out.println("Error al eliminar entradas del trabajador"+e);
+        }
+       
+    }
+    
+    public void eliminar_Salida(String cod_trbj){
+        try {
+             ps = con.prepareStatement("DELETE FROM sistema_salida WHERE cod_trabajador=?");
+             ps.setString(1, cod_trbj);
+             ps.executeUpdate();
+             ps.close();
+            
+        } catch (Exception e) {
+            System.out.println("Error al eliminar salidas"+ e);
+        }
+       
     }
     
     

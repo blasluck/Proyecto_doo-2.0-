@@ -373,14 +373,14 @@ public class Ventana extends javax.swing.JFrame {
         background.setLayout(backgroundLayout);
         backgroundLayout.setHorizontalGroup(
             backgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 890, Short.MAX_VALUE)
+            .addGap(0, 880, Short.MAX_VALUE)
         );
         backgroundLayout.setVerticalGroup(
             backgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 680, Short.MAX_VALUE)
+            .addGap(0, 670, Short.MAX_VALUE)
         );
 
-        getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 30, 890, 680));
+        getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 30, 880, 670));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

@@ -54,7 +54,7 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="0" y="0" width="890" height="670"/>
+              <AbsoluteConstraints x="0" y="0" width="890" height="660"/>
             </Constraint>
           </Constraints>
 
@@ -234,7 +234,7 @@
                           <Component id="jlabel_edit_trbj" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jlabel_delete_trbj" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="52" max="32767" attributes="0"/>
+                      <EmptySpace pref="42" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>

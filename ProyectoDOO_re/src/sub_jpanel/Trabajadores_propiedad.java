@@ -403,10 +403,10 @@ public class Trabajadores_propiedad extends javax.swing.JPanel {
                 .addGroup(list_jpnaelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jlabel_edit_trbj)
                     .addComponent(jlabel_delete_trbj))
-                .addContainerGap(52, Short.MAX_VALUE))
+                .addContainerGap(42, Short.MAX_VALUE))
         );
 
-        fondo.add(list_jpnael, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 890, 670));
+        fondo.add(list_jpnael, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 890, 660));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
